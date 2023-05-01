@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiply Two Numbers</title>
+  </head>
+  <body>
+    <label>Enter the first number:</label>
+    <input type="number" id="num1">
+    <br>
+    <label>Enter the second number:</label>
+    <input type="number" id="num2">
+    <br>
+    <button onclick="calculateProduct()">Calculate Product</button>
+    <br>
+    <label>Result:</label>
+    <span id="result"></span>
+
+    <script>
+      function calculateProduct() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var product = num1 * num2;
+        document.getElementById("result").innerHTML = product;
+      }
+    </script>
+  </body>
+</html>
+
